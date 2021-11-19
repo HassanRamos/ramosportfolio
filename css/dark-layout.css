@@ -1,0 +1,143 @@
+/* ProLife Dark-Layout HTML Template */
+
+.dark-layout .pp-scrollable,
+.dark-layout,
+.dark-layout .news-section,
+.dark-layout .blog-single-section,
+.dark-layout .clients-section .inner-container:before{
+	background-color:#29323b;
+}
+
+.dark-layout .list-style-one li,
+.dark-layout .list-style-one li span,
+.dark-layout .sec-title h2,
+.dark-layout .contact-section .info-column h2,
+.dark-layout .skill-block .inner-box .text,
+.dark-layout .skill-block .skill-item .skill-percentage,
+.dark-layout .skill-block .inner-box h3,
+.dark-layout .profile-column .inner-column h4,
+.dark-layout .profile-block .block-inner h4,
+.dark-layout .apps-section .content-column .author-box .box-inner h5,
+.dark-layout .apps-section .content-column .author-box .box-inner .designation,
+.dark-layout .header .language-box .language-list li,
+.dark-layout .banner-section .content-column h1,
+.dark-layout .testimonial-block .inner-box .slide-text,
+.dark-layout .testimonial-block .inner-box .author-title,
+.dark-layout .testimonial-block .inner-box .designation,
+.dark-layout .gallery-block .inner-box .lower-content h4 a,
+.dark-layout .web-section .filters .filter-tabs .filter,
+.dark-layout .profile-block .block-inner .description-text,
+.dark-layout .banner-section .content-column .bold-text,
+.dark-layout .news-block .inner-box .lower-content h4 a,
+.dark-layout .contact-section .info-column .location,
+.dark-layout .contact-section .info-column .number,
+.dark-layout .contact-section .footer-bottom .footer-nav li a,
+.dark-layout .contact-section .footer-bottom .copyright,
+.dark-layout .news-block .inner-box .lower-content .post-meta li,
+.dark-layout .news-block .inner-box .lower-content .upper-box .box-inner .author-name{
+	color:#ffffff;
+}
+
+.dark-layout .sec-title .text,
+.dark-layout .profile-block .block-inner .text,
+.dark-layout .apps-section .content-column .bold-text,
+.dark-layout .contact-section .info-column .text,
+.dark-layout .banner-section .content-column .text{
+	color:#ffffff;
+	opacity:0.80;
+}
+
+.dark-layout .hamburger span,
+.dark-layout .skill-block .skill-item .skill-bar .bar-inner{
+	background-color:#ffffff;
+}
+
+.dark-layout .contact-form .form-group input,
+.dark-layout .contact-form .form-group select,
+.dark-layout .contact-form .form-group textarea,
+.dark-layout .contact-section .inner-container,
+.dark-layout .profile-column .inner-column,
+.dark-layout .skills-section .inner-container,
+.dark-layout .nav-toggle-btn{
+	background-color:#0f1821 !important;
+}
+
+.dark-layout .contact-form .form-group input,
+.dark-layout .contact-form .form-group select,
+.dark-layout .contact-form .form-group textarea,
+.dark-layout .news-block .inner-box .lower-content,
+.dark-layout .blog-single-section .other-posts,
+.dark-layout .blog-single-section .inner-section .post-share-options .tags,
+.dark-layout .about-section .pagers-column .dotted-circle-two,
+.dark-layout .about-section .pagers-column .dotted-circle-one{
+	border-color:rgba(255,255,255,0.10);
+}
+
+.dark-layout.pp-viewing-Contact .header,
+.dark-layout.pp-viewing-Clients .header,
+.dark-layout.pp-viewing-Testimonials .header,
+.dark-layout.pp-viewing-Awards .header,
+.dark-layout.pp-viewing-Portfolio .header,
+.dark-layout.pp-viewing-Resume .header,
+.dark-layout.pp-viewing-About .header,
+.dark-layout.pp-viewing-Skills .header,
+.dark-layout.pp-viewing-Services .header{
+	background-color:#0f1821 !important;
+	border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.dark-layout .blog-single-section .other-posts:after{
+	background-color:rgba(255,255,255,0.10);
+}
+
+.dark-layout .blog-single-section .inner-section .lower-box{
+	background-color:#0f1821;
+}
+
+.dark-layout .blog-single-section .inner-section .upper-box,
+.dark-layout .menu{
+	background-color:#0f1821 !important;
+}
+
+.dark-layout .comments-area .comment .comment-inner{
+	background-color:#0f1821;
+	border-color:rgba(255,255,255,0.20);
+}
+
+.dark-layout .list-style-two li,
+.dark-layout .comments-area .comment-info,
+.dark-layout .blog-single-section .other-posts h4,
+.dark-layout .blog-single-section .other-posts .prev-post a,
+.dark-layout .blog-single-section .other-posts .next-post a,
+.dark-layout .blog-single-section .inner-section .post-share-options .social-links li,
+.dark-layout .blog-single-section .inner-section .post-share-options .tags a,
+.dark-layout .blog-single-section .inner-section .post-share-options .post-share-inner,
+.dark-layout .blog-single-section .inner-section .post-share-options .tags span,
+.dark-layout .blog-single-section .inner-section .lower-box h3,
+.dark-layout .blog-single-section .inner-section .lower-box .text blockquote .author-name,
+.dark-layout .blog-single-section .inner-section .lower-box .text blockquote .quote-text,
+.dark-layout .blog-single-section .inner-section .lower-box .text p,
+.dark-layout .blog-single-section .inner-section .upper-box .text,
+.dark-layout .blog-single-section .inner-section .upper-box .post-meta li,
+.dark-layout .blog-single-section .inner-section .upper-box h2,
+.dark-layout .menu-footer-copyright,
+.dark-layout .menu-footer-phone a,
+.dark-layout .menu-footer-contacts .text,
+.dark-layout .menu-main a{
+	color:#ffffff;
+}
+
+.dark-layout .menu::before{
+	opacity:0.10;
+}
+
+.dark-layout .comment-form .form-group input[type="text"],
+.dark-layout .comment-form .form-group input[type="password"],
+.dark-layout .comment-form .form-group input[type="tel"],
+.dark-layout .comment-form .form-group input[type="email"],
+.dark-layout .comment-form .form-group select,
+.dark-layout .comment-form .form-group textarea{
+	color:#ffffff;
+	background-color:#0f1821;
+	border-color:rgba(255,255,255,0.20);
+}
