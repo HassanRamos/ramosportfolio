@@ -1,4 +1,4 @@
-/* ProLife Portfolio HTML Template*/
+
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -54,19 +54,19 @@ body {
 }
 
 ::selection {
-  background-color: #fe1b48;
+  background-color: #244fea
   color: #ffffff;
   text-shadow: none;
 }
 
 -webkit-::selection {
-  background-color: #fe1b48;
+  background-color: #244fea
   color: #ffffff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background-color: #fe1b48;
+  background-color: #244fea
   color: #ffffff;
   text-shadow: none;
 }
@@ -78,7 +78,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #fe1b48;
+  background: #244fea
 }
 
 img {
@@ -114,7 +114,7 @@ img {
 .preloader-close {
     position: fixed;
     z-index: 999999;
-    color: #fe1b48;
+    color: #244fea
     padding: 10px 20px;
     cursor: pointer;
     right: 0;
@@ -160,7 +160,7 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #fe1b48;
+    background: #244fea
 }
 
 /* 1.2 Typography */
@@ -549,7 +549,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
 .menu-main .active a,
 .menu-main a:hover {
 	color:#ffffff;
-	background-color: #fe1b48;
+	background-color: #244fea
 }
 
 .menu-main a:after {
@@ -595,7 +595,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
 
 .menu-footer-mail a{
 	position: relative;
-    color: #fe1b48;
+    color: #244fea
     font-size: 18px;
     font-weight: 600;
     text-decoration: underline;
@@ -608,7 +608,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
 }
 
 .menu-footer-copyright a{
-	color:#fe1b48;
+	color:#244fea
 	font-weight:600;
 }
 
@@ -669,7 +669,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
   margin:10px 0px;
   background: #ffffff !important;
   overflow: hidden;
-  border:1px solid #fe1b48;
+  border:1px solid #244fea
   transition: background .5s ease-in-out;
   position: relative;
 }
@@ -689,7 +689,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
   position: absolute;
   left: 0;
   top: 0;
-  background: #fe1b48;
+  background: #244fea
 }
 
 .progress-nav li.active:before {
@@ -1545,7 +1545,7 @@ h1,h2,h3,h4,h5,h6 {
 a{
 	text-decoration:none;
 	cursor:pointer;
-	color:#fe1b48;
+	color:#244fea
 }
 
 button,
@@ -1566,7 +1566,7 @@ a:hover,a:focus,a:visited{
 	font-weight: 600;
 	overflow: hidden;
 	border-radius:5px;
-	background-color: #fe1b48;
+	background-color: #244fea
 	text-transform: uppercase;
 }
 
@@ -1689,7 +1689,7 @@ ul,li{
 	top:0px;
 	width:50px;
 	height:50px;
-	color:#fe1b48;
+	color:#244fea
 	font-size:20px;
 	line-height:50px;
 	text-align:center;
@@ -1705,7 +1705,7 @@ ul,li{
 }
 
 .list-style-one li:hover::before{
-	background-color:#fe1b48;
+	background-color:#244fea
 	color:#ffffff;
 }
 
@@ -1742,7 +1742,7 @@ ul,li{
 	height:8px;
 	font-weight:400;
 	border-radius:50px;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 
@@ -1761,7 +1761,7 @@ ul,li{
 
 .sec-title .title{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-size:16px;
 	margin-bottom:10px;
 }
@@ -1837,7 +1837,7 @@ ul,li{
 
 .header .language-box .language-list li:hover,
 .header .language-box .language-list li.active{
-	background-color:#fe1b48;
+	background-color:#244fea
 	color:#ffffff;
 }
 
@@ -1954,7 +1954,7 @@ ul,li{
 .banner-section .content-column h1 span{
 	position:relative;
 	display:block;
-	color:#fe1b48;
+	color:#244fea
 }
 
 .banner-section .content-column .info-list{
@@ -1965,7 +1965,7 @@ ul,li{
 
 .banner-section .content-column .info-list li{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-size:16px;
 	font-weight:600;
 	padding-right:12px;
@@ -2012,13 +2012,13 @@ ul,li{
 
 .banner-section .content-column .text a{
 	font-weight:600;
-	color:#fe1b48;
+	color:#244fea
 	text-transform:capitalize;
 	text-decoration:underline;
 }
 
 .banner-section .content-column .text a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .banner-section .images-column{
@@ -2126,7 +2126,7 @@ ul,li{
 	font-weight:700;
 	text-align:center;
 	display:inline-block;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .section-number sub{
@@ -2148,7 +2148,7 @@ ul,li{
 	font-weight:400;
 	text-align:center;
 	display:inline-block;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 /*** 
@@ -2237,7 +2237,7 @@ ul,li{
 .skill-block .inner-box .designation{
 	position:relative;
 	margin-top:25px;
-	color:#fe1b48;
+	color:#244fea
 	font-size:16px;
 }
 
@@ -2288,7 +2288,7 @@ ul,li{
 	height:10px;
 	width:0px;
 	border-radius:50px;
-	border-bottom:10px solid #fe1b48;
+	border-bottom:10px solid #244fea
 	-webkit-transition:all 2000ms ease;
 	-ms-transition:all 2000ms ease;
 	-o-transition:all 2000ms ease;
@@ -2393,7 +2393,7 @@ ul,li{
 	text-align:center;
 	border-radius:50%;
 	padding:35px 22px 30px;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .apps-section .image-column .talk-box .count-box{
@@ -2428,7 +2428,7 @@ ul,li{
 	bottom:0px;
 	width:400px;
 	height:510px;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .apps-section .content-column{
@@ -2526,7 +2526,7 @@ ul,li{
 /* Handle */
 
 .profile-column .inner-column::-webkit-scrollbar-thumb{
-  background: #fe1b48;
+  background: #244fea
   cursor:pointer;
 }
 
@@ -2554,7 +2554,7 @@ ul,li{
 	position:relative;
 	/* height:468px;
 	overflow-y:auto;
-	border:3px solid #fe1b48;*/
+	border:3px solid #244fea*/
 	padding:35px 30px 40px;
 	background-color:#ffffff;
 	box-shadow:0px 0px 20px rgba(0,0,0,0.10);
@@ -2607,7 +2607,7 @@ ul,li{
 
 .profile-block .block-inner .title{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-size:16px;
 	line-height:1.3em;
 	font-weight:600;
@@ -2710,7 +2710,7 @@ ul,li{
 }
 
 .web-section .content-column .project-detail:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .web-section .image-column{
@@ -2773,13 +2773,13 @@ ul,li{
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	border:2px solid #fe1b48;
+	border:2px solid #244fea
 }
 
 .web-section .filters .filter-tabs .filter.active,
 .web-section .filters .filter-tabs .filter:hover{
 	color:#ffffff;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 /* Gallery Item */
@@ -2837,7 +2837,7 @@ ul,li{
 	width:100%;
 	height:100%;
 	opacity:0.8;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .gallery-block .inner-box:hover .overlay-box{
@@ -2914,14 +2914,14 @@ ul,li{
 }
 
 .gallery-block .inner-box .lower-content h4 a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .gallery-block .inner-box .lower-content .designation{
 	position:relative;
 	font-weight:700;
 	font-size:15px;
-	color:#fe1b48;
+	color:#244fea
 	margin-top:10px;
 	text-transform:uppercase;
 }
@@ -2969,7 +2969,7 @@ ul,li{
 
 .clients-section .owl-dots .owl-dot:hover,
 .clients-section .owl-dots .owl-dot.active{
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .clients-section .sec-title{
@@ -3015,7 +3015,7 @@ ul,li{
 	text-align:center;
 	padding:0px 0px 0px;
 	background-color:#ffffff;
-	border:2px solid #fe1b48;
+	border:2px solid #244fea
 }
 
 .client-block .inner-box .image{
@@ -3222,7 +3222,7 @@ ul,li{
 	width:42px;
 	height:42px;
 	border-radius:50%;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .about-section .pagers-column .dotted-circle-one .dott-two{
@@ -3252,7 +3252,7 @@ ul,li{
 	width:16px;
 	height:16px;
 	border-radius:50%;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .about-section .pagers-column .dotted-circle-two .dott-two{
@@ -3346,7 +3346,7 @@ ul,li{
 	font-weight:700;
 	display:inline-block;
 	margin:0px 15px 0px 0px;
-	background-color:#fe1b48;
+	background-color:#244fea
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -3383,7 +3383,7 @@ ul,li{
 	font-weight:700;
 	display:inline-block;
 	margin:0px 15px 0px 0px;
-	background-color:#fe1b48;
+	background-color:#244fea
 	-webkit-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
@@ -3473,7 +3473,7 @@ ul,li{
 	top:0px;
 	width:1px;
 	height:100%;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .news-block .inner-box .image:after{
@@ -3483,7 +3483,7 @@ ul,li{
 	bottom:15px;
 	width:100%;
 	height:1px;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .news-block .inner-box .image{
@@ -3517,7 +3517,7 @@ ul,li{
 	font-weight:600;
 	padding:10px 20px;
 	display:inline-block;
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .news-block .inner-box .lower-content{
@@ -3575,7 +3575,7 @@ ul,li{
 	position:absolute;
 	left:0px;
 	top:1px;
-	color:#fe1b48;
+	color:#244fea
 	font-size:18px;
 	margin-right:0px;
 }
@@ -3600,7 +3600,7 @@ ul,li{
 }
 
 .news-block .inner-box .lower-content h4 a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 /*** 
@@ -3634,7 +3634,7 @@ ul,li{
 	position:relative;
 	padding:70px 70px 30px;
 	background-color:#ffffff;
-	border-top:2px solid #fe1b48;
+	border-top:2px solid #244fea
 	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
 }
 
@@ -3700,7 +3700,7 @@ ul,li{
 
 .contact-form .form-group input:focus,
 .contact-form .form-group textarea:focus{
-	border-color:#fe1b48;
+	border-color:#244fea
 	outline:none;
 	box-shadow:none;
 }
@@ -3746,7 +3746,7 @@ select:focus{
 
 .contact-section .info-column .email{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-size:18px;
 	font-weight:400;
 	display:block;
@@ -3767,7 +3767,7 @@ select:focus{
 }
 
 .contact-section .info-column .number:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .contact-section .footer-bottom{
@@ -3803,7 +3803,7 @@ select:focus{
 }
 
 .contact-section .footer-bottom .footer-nav li a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .contact-section .footer-bottom .copyright{
@@ -3819,7 +3819,7 @@ select:focus{
 
 .contact-section .footer-bottom .copyright a{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-weight:600;
 }
 
@@ -3875,8 +3875,8 @@ select:focus{
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active{
-	background:#fe1b48;
-	border-color:#fe1b48;
+	background:#244fea
+	border-color:#244fea
 }
 
 .ui-menu .ui-menu-item-wrapper{
@@ -3888,7 +3888,7 @@ select:focus{
 }
 
 .ui-menu-item:hover{
-	background-color:#fe1b48;
+	background-color:#244fea
 }
 
 .contact-form input.error,
@@ -3983,7 +3983,7 @@ select:focus{
 	left:0px;
 	top:3px;
 	font-size:18px;
-	color:#fe1b48;
+	color:#244fea
 	line-height:1em;
 	font-weight:600;
 }
@@ -4030,7 +4030,7 @@ select:focus{
 	position:relative;
 	padding-left:60px;
 	margin-left:25px;
-	border-left:2px solid #fe1b48;
+	border-left:2px solid #244fea
 }
 
 .blog-single-section .inner-section .lower-box .text blockquote .quote-text{
@@ -4055,13 +4055,13 @@ select:focus{
 	top:0px;
 	width:50px;
 	height:50px;
-	color:#fe1b48;
+	color:#244fea
 	font-size:20px;
 	line-height:48px;
 	text-align:center;
 	border-radius:50%;
 	background-color:#ffffff;
-	border:2px solid #fe1b48;
+	border:2px solid #244fea
 }
 
 .blog-single-section .inner-section .lower-box h3{
@@ -4080,7 +4080,7 @@ select:focus{
 
 .blog-single-section .inner-section .post-share-options .post-share-inner{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 }
 
 .blog-single-section .inner-section .post-share-options .tags{
@@ -4128,7 +4128,7 @@ select:focus{
 }
 
 .blog-single-section .inner-section .social-links li a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .blog-single-section .other-posts{
@@ -4224,7 +4224,7 @@ select:focus{
 
 .blog-single-section .other-posts .prev-post a:hover,
 .blog-single-section .other-posts .next-post a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 /*** 
@@ -4317,7 +4317,7 @@ select:focus{
 
 .comments-area .comment-box .reply-comment{
 	position:relative;
-	color:#fe1b48;
+	color:#244fea
 	font-size:16px;
 	font-weight:500;
 }
@@ -4370,7 +4370,7 @@ select:focus{
 .comment-form .form-group input[type="email"]:focus,
 .comment-form .form-group select:focus,
 .comment-form .form-group textarea:focus{
-	border-color:#fe1b48;
+	border-color:#244fea
 }
 
 .comment-form .form-group textarea{
@@ -4402,7 +4402,7 @@ select:focus{
 .comment-form input:focus,
 .comment-form select:focus,
 .comment-form textarea:focus{
-	border-color:#fe1b48;	
+	border-color:#244fea	
 }
 
 
@@ -4562,7 +4562,7 @@ select:focus{
 }
 
 .mokeup-section .title-box h2 span{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .mokeup-section .title-box .text{
@@ -4729,7 +4729,7 @@ select:focus{
 }
 
 .mokeup-section .image-outer h4 a:hover{
-	color:#fe1b48;
+	color:#244fea
 }
 
 .map-contact-section{
@@ -4921,7 +4921,7 @@ select:focus{
 	padding-right:60px;
 	text-align:right;
 	border-left:0px;
-	border-right:2px solid #fe1b48;
+	border-right:2px solid #244fea
 }
 
 .rtl .blog-single-section .inner-section .lower-box .text blockquote .quote-icon{

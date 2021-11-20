@@ -1,13 +1,4 @@
-/**
- * jQuery TypeIt
- * @author Alex MacArthur (http://macarthur.me)
- * @version 4.2.3
- * @copyright 2016 Alex MacArthur
- * @description Types out a given string or strings.
- */
 
- /* jslint browser: true */
- /* globals jQuery:false */
 
 (function($, undefined) {
 

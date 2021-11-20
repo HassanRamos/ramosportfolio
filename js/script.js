@@ -1,8 +1,5 @@
 /*----------------------------------------------------------------
 
-	Template Name: Ethant Hunt - HTML Template 
-	Version: 1.0
-
 	-------------------------------------------------------------------------------*/
 
 /**************************************************************
@@ -251,7 +248,7 @@
 	if ($('.variable-text').length) {
 		
 		$('.variable-text').typeIt({
-			 strings: ["I am ProLife Web Developer & designer"],
+			 strings: ["I am Software Developer & designer"],
 			 speed: 150,
 			 breakLines: true,
 			 loop:false,
