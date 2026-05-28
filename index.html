@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Hassan Rapando — Full-Stack, Mobile & Backend Developer</title>
 	<meta name="description"
-		content="Full-stack, mobile and backend software developer specializing in Flutter, React Native, Node.js, Laravel, REST APIs, data systems and scalable digital platforms. Based in Nairobi, Kenya." />
+		content="Hassan Rapando is a Full-Stack, Mobile and Backend Software Developer based in Nairobi, Kenya, specializing in mobile apps, backend APIs, dashboards and digital operations systems." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
 		rel="stylesheet" />
 	<style>
 		*,
@@ -18,29 +18,29 @@
 		*::after {
 			box-sizing: border-box;
 			margin: 0;
-			padding: 0;
+			padding: 0
 		}
 
 		:root {
 			--bg: #0d0f12;
 			--bg2: #13161b;
 			--bg3: #1a1e25;
-			--border: rgba(255, 255, 255, 0.07);
-			--border2: rgba(255, 255, 255, 0.12);
+			--border: rgba(255, 255, 255, .07);
+			--border2: rgba(255, 255, 255, .12);
 			--text: #e8eaf0;
-			--text2: #9aa1b3;
-			--text3: #636b7e;
+			--text2: #9aa1b2;
+			--text3: #687084;
 			--accent: #4f8eff;
-			--accent-bg: rgba(79, 142, 255, 0.08);
-			--accent-border: rgba(79, 142, 255, 0.25);
+			--accent-bg: rgba(79, 142, 255, .08);
+			--accent-border: rgba(79, 142, 255, .25);
 			--green: #3ecf8e;
-			--green-bg: rgba(62, 207, 142, 0.08);
-			--radius: 12px;
-			--radius-sm: 8px;
+			--green-bg: rgba(62, 207, 142, .08);
+			--radius: 14px;
+			--radius-sm: 9px
 		}
 
 		html {
-			background: var(--bg);
+			background: var(--bg)
 		}
 
 		body {
@@ -51,52 +51,48 @@
 			display: flex;
 			align-items: flex-start;
 			justify-content: center;
-			padding: 48px 20px 80px;
+			padding: 48px 20px 80px
 		}
 
 		.page {
 			width: 100%;
-			max-width: 720px;
+			max-width: 760px
 		}
 
 		@keyframes fadeUp {
 			from {
 				opacity: 0;
-				transform: translateY(16px);
+				transform: translateY(16px)
 			}
 
 			to {
 				opacity: 1;
-				transform: translateY(0);
+				transform: translateY(0)
 			}
 		}
 
 		.fade {
-			animation: fadeUp 0.5s ease both;
+			animation: fadeUp .5s ease both
 		}
 
 		.fade:nth-child(1) {
-			animation-delay: 0.05s;
+			animation-delay: .05s
 		}
 
 		.fade:nth-child(2) {
-			animation-delay: 0.12s;
+			animation-delay: .12s
 		}
 
 		.fade:nth-child(3) {
-			animation-delay: 0.19s;
+			animation-delay: .19s
 		}
 
 		.fade:nth-child(4) {
-			animation-delay: 0.26s;
+			animation-delay: .26s
 		}
 
 		.fade:nth-child(5) {
-			animation-delay: 0.33s;
-		}
-
-		.fade:nth-child(6) {
-			animation-delay: 0.40s;
+			animation-delay: .33s
 		}
 
 		.header,
@@ -104,22 +100,15 @@
 			background: var(--bg2);
 			border: 1px solid var(--border);
 			border-radius: var(--radius);
-			margin-bottom: 12px;
-		}
-
-		.header {
-			padding: 28px 28px 24px;
-		}
-
-		.card {
-			padding: 22px 28px;
+			padding: 24px 28px;
+			margin-bottom: 12px
 		}
 
 		.avatar-row {
 			display: flex;
 			align-items: center;
 			gap: 18px;
-			margin-bottom: 18px;
+			margin-bottom: 20px
 		}
 
 		.avatar {
@@ -135,29 +124,28 @@
 			font-size: 16px;
 			font-weight: 500;
 			color: var(--accent);
-			flex-shrink: 0;
+			flex-shrink: 0
 		}
 
 		.name {
-			font-size: 22px;
-			font-weight: 500;
+			font-size: 24px;
+			font-weight: 600;
 			color: var(--text);
-			margin-bottom: 4px;
+			margin-bottom: 4px
 		}
 
 		.role {
 			font-size: 13px;
 			color: var(--text2);
-			line-height: 1.5;
+			line-height: 1.5
 		}
 
 		.pills,
 		.skills,
-		.proj-links,
 		.tags {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 8px;
+			gap: 8px
 		}
 
 		.pill,
@@ -174,112 +162,104 @@
 			border-radius: 999px;
 			padding: 5px 12px;
 			text-decoration: none;
+			transition: color .15s, border-color .15s, background .15s
 		}
 
-		.skill,
-		.tag {
-			border-radius: var(--radius-sm);
-			padding: 5px 10px;
-		}
-
-		.pill:hover,
-		.proj-link:hover {
+		.pill:hover {
 			color: var(--accent);
-			border-color: var(--accent-border);
+			border-color: var(--accent-border)
 		}
 
 		.pill svg {
 			width: 13px;
 			height: 13px;
-			flex-shrink: 0;
+			flex-shrink: 0
 		}
 
 		.label {
 			font-family: 'DM Mono', monospace;
 			font-size: 10px;
 			font-weight: 500;
-			letter-spacing: 0.1em;
+			letter-spacing: .1em;
 			color: var(--text3);
 			text-transform: uppercase;
-			margin-bottom: 14px;
+			margin-bottom: 14px
 		}
 
-		.about,
-		.text {
+		.about {
 			font-size: 14px;
 			line-height: 1.75;
-			color: var(--text2);
+			color: var(--text2)
 		}
 
-		.split {
+		.grid-2 {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-			gap: 10px;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 10px
 		}
 
-		.mini {
+		.capability {
 			background: var(--bg3);
 			border: 1px solid var(--border);
 			border-radius: var(--radius-sm);
-			padding: 14px;
+			padding: 14px
 		}
 
-		.mini-title {
+		.cap-title {
 			font-size: 13px;
-			font-weight: 500;
+			font-weight: 600;
 			color: var(--text);
-			margin-bottom: 6px;
+			margin-bottom: 5px
 		}
 
-		.mini-text {
+		.cap-text {
 			font-size: 12px;
-			line-height: 1.65;
-			color: var(--text2);
+			line-height: 1.55;
+			color: var(--text3)
 		}
 
 		.projects {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-			gap: 8px;
+			grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+			gap: 10px
 		}
 
 		.proj {
 			background: var(--bg3);
 			border: 1px solid var(--border);
 			border-radius: var(--radius-sm);
-			padding: 14px 14px 12px;
-			transition: border-color 0.15s;
-		}
-
-		.proj.featured {
-			grid-column: 1 / -1;
-			border-color: var(--accent-border);
-			background: linear-gradient(180deg, rgba(79, 142, 255, 0.06), var(--bg3));
+			padding: 15px 15px 13px;
+			transition: border-color .15s
 		}
 
 		.proj:hover {
-			border-color: var(--border2);
+			border-color: var(--border2)
+		}
+
+		.featured {
+			grid-column: 1/-1;
+			border-color: var(--accent-border);
+			background: linear-gradient(180deg, rgba(79, 142, 255, .08), var(--bg3))
 		}
 
 		.proj-name {
-			font-size: 13px;
-			font-weight: 500;
+			font-size: 14px;
+			font-weight: 600;
 			color: var(--text);
-			margin-bottom: 4px;
+			margin-bottom: 5px
 		}
 
 		.proj-desc {
 			font-size: 12px;
-			color: var(--text2);
-			margin-bottom: 10px;
-			line-height: 1.55;
-		}
-
-		.proj-note {
-			font-size: 11px;
-			line-height: 1.55;
 			color: var(--text3);
 			margin-bottom: 10px;
+			line-height: 1.55
+		}
+
+		.proj-links {
+			display: flex;
+			gap: 6px;
+			flex-wrap: wrap
 		}
 
 		.proj-link {
@@ -291,23 +271,52 @@
 			color: var(--accent);
 			border: 1px solid var(--accent-border);
 			border-radius: 999px;
-			padding: 3px 9px;
+			padding: 2px 9px;
 			text-decoration: none;
-			transition: background 0.15s;
+			transition: background .15s
+		}
+
+		.proj-link:hover {
+			background: var(--accent-bg)
 		}
 
 		.proj-link svg {
 			width: 11px;
-			height: 11px;
+			height: 11px
 		}
 
 		.proj-link.green {
 			color: var(--green);
-			border-color: rgba(62, 207, 142, 0.25);
+			border-color: rgba(62, 207, 142, .25)
 		}
 
 		.proj-link.green:hover {
-			background: var(--green-bg);
+			background: var(--green-bg)
+		}
+
+		.experience {
+			display: grid;
+			gap: 12px
+		}
+
+		.item-title {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--text);
+			margin-bottom: 3px
+		}
+
+		.item-meta {
+			font-size: 12px;
+			font-family: 'DM Mono', monospace;
+			color: var(--text3);
+			margin-bottom: 6px
+		}
+
+		.item-text {
+			font-size: 13px;
+			line-height: 1.65;
+			color: var(--text2)
 		}
 
 		.footer {
@@ -315,21 +324,29 @@
 			font-size: 11px;
 			font-family: 'DM Mono', monospace;
 			color: var(--text3);
-			margin-top: 32px;
+			margin-top: 32px
 		}
 
-		@media (max-width: 480px) {
+		@media(max-width:620px) {
 			body {
-				padding: 24px 16px 60px;
+				padding: 24px 16px 60px
 			}
 
 			.header,
 			.card {
-				padding: 20px 18px;
+				padding: 20px 18px
 			}
 
 			.name {
-				font-size: 19px;
+				font-size: 20px
+			}
+
+			.grid-2 {
+				grid-template-columns: 1fr
+			}
+
+			.projects {
+				grid-template-columns: 1fr
 			}
 		}
 	</style>
@@ -337,228 +354,155 @@
 
 <body>
 	<main class="page" role="main">
-
 		<div class="header fade">
 			<div class="avatar-row">
 				<div class="avatar">HR</div>
 				<div>
 					<div class="name">Hassan Rapando</div>
-					<div class="role">Full-Stack, Mobile &amp; Backend Software Developer &nbsp;·&nbsp; Nairobi, Kenya
-					</div>
+					<div class="role">Full-Stack, Mobile &amp; Backend Software Developer · Nairobi, Kenya<br />Digital
+						Operations Systems · REST APIs · Mobile Applications · Admin Dashboards</div>
 				</div>
 			</div>
 			<div class="pills">
-				<a class="pill" href="mailto:ramoshassan42@gmail.com">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-						<rect x="2" y="4" width="20" height="16" rx="2" />
-						<path d="m2 7 10 7 10-7" />
-					</svg>
-					ramoshassan42@gmail.com
-				</a>
-				<a class="pill" href="tel:+254768702038">
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-						<path
-							d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7A2 2 0 0 1 22 16.9z" />
-					</svg>
-					+254 768 702 038
-				</a>
-				<a class="pill" href="https://github.com/HassanRamos" target="_blank" rel="noopener">
-					<svg viewBox="0 0 24 24" fill="currentColor">
-						<path
-							d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
-					</svg>
-					github.com/HassanRamos
-				</a>
+				<a class="pill" href="mailto:hassanrapando@gmail.com">✉ hassanrapando@gmail.com</a>
+				<a class="pill" href="tel:+254768702038">☎ +254 768 702 038</a>
+				<a class="pill" href="https://github.com/HassanRamos" target="_blank"
+					rel="noopener">github.com/HassanRamos</a>
 			</div>
 		</div>
-
 		<div class="card fade">
 			<div class="label">About</div>
-			<p class="about">Software Developer with a degree in Statistics and Computer Science from the Technical
-				University of Mombasa. I build scalable mobile applications, backend APIs, dashboards and data-driven
-				platforms for agriculture, POS, fintech, job platforms, customer feedback, and enterprise automation.
-				Through SoraHub Technology Limited, I have designed and developed production systems covering user
-				management, field data capture, reporting, payments, integrations, and operational workflows.</p>
+			<p class="about">Software Developer with 5+ years of practical experience building mobile applications,
+				backend APIs, admin dashboards and digital operations systems. I hold a Bachelor of Science in
+				Statistics and Computer Science from the Technical University of Mombasa. Through freelance/contract
+				work and SoraHub Technology Limited, I have delivered systems across agriculture, POS, fintech/lending,
+				restaurant management, job platforms, customer feedback and enterprise automation.</p>
 		</div>
-
 		<div class="card fade">
 			<div class="label">Core Capability Areas</div>
-			<div class="split">
-				<div class="mini">
-					<div class="mini-title">Mobile &amp; Field Applications</div>
-					<div class="mini-text">Cross-platform mobile apps, Android releases, API integration, user
-						workflows, feedback handling, and field-ready data capture experiences.</div>
+			<div class="grid-2">
+				<div class="capability">
+					<div class="cap-title">Mobile &amp; Field Applications</div>
+					<div class="cap-text">Flutter, React Native, Android deployment, mobile API integration and
+						field-focused workflows.</div>
 				</div>
-				<div class="mini">
-					<div class="mini-title">Backend APIs &amp; Dashboards</div>
-					<div class="mini-text">RESTful APIs, admin panels, database-driven workflows, authentication,
-						reporting modules, and system integrations.</div>
+				<div class="capability">
+					<div class="cap-title">Backend APIs &amp; Dashboards</div>
+					<div class="cap-text">RESTful services, admin dashboards, authentication, reporting flows and
+						role-based access.</div>
 				</div>
-				<div class="mini">
-					<div class="mini-title">Digital Operations Systems</div>
-					<div class="mini-text">Platforms for agriculture, POS, lending, recruitment and business automation,
-						built around real user operations and measurable service delivery.</div>
+				<div class="capability">
+					<div class="cap-title">Digital Operations Systems</div>
+					<div class="cap-text">Business workflow automation, records management, POS, agriculture, job boards
+						and feedback systems.</div>
 				</div>
-				<div class="mini">
-					<div class="mini-title">Deployment &amp; Product Delivery</div>
-					<div class="mini-text">Linux/VPS deployment, databases, SSL/domain setup, iterative development,
-						testing, release management, and ongoing support.</div>
+				<div class="capability">
+					<div class="cap-title">Deployment &amp; Product Delivery</div>
+					<div class="cap-text">Linux/VPS hosting, Docker, Git/GitHub, iterative releases, support, testing
+						and documentation.</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="card fade">
 			<div class="label">Skills</div>
-			<div class="skills">
-				<span class="skill">Flutter</span>
-				<span class="skill">React Native</span>
-				<span class="skill">Node.js</span>
-				<span class="skill">Laravel</span>
-				<span class="skill">JavaScript</span>
-				<span class="skill">Firebase</span>
-				<span class="skill">MySQL</span>
-				<span class="skill">MongoDB</span>
-				<span class="skill">REST APIs</span>
-				<span class="skill">Admin Dashboards</span>
-				<span class="skill">Responsive UI</span>
-				<span class="skill">Linux/VPS</span>
-				<span class="skill">Git/GitHub</span>
-				<span class="skill">Agile Delivery</span>
-				<span class="skill">Statistics &amp; CS</span>
-			</div>
+			<div class="skills"><span class="skill">Flutter</span><span class="skill">React Native</span><span
+					class="skill">Node.js</span><span class="skill">Laravel</span><span
+					class="skill">JavaScript</span><span class="skill">Python</span><span
+					class="skill">Docker</span><span class="skill">Firebase</span><span class="skill">MySQL</span><span
+					class="skill">MongoDB</span><span class="skill">REST APIs</span><span class="skill">PWA</span><span
+					class="skill">Linux/VPS</span><span class="skill">Git/GitHub</span><span class="skill">Agile
+					Delivery</span><span class="skill">Statistics &amp; CS</span></div>
 		</div>
-
 		<div class="card fade">
 			<div class="label">Selected Experience</div>
-			<div class="split">
-				<div class="mini">
-					<div class="mini-title">SoraHub Technology Limited</div>
-					<div class="mini-text">Founder / Software Developer. Built and maintained web, mobile and backend
-						systems across agriculture, POS, SaaS operations, jobs, lending and enterprise automation.</div>
+			<div class="experience">
+				<div>
+					<div class="item-title">Software Developer / Founder — SoraHub Technology Limited</div>
+					<div class="item-meta">2023 - Present</div>
+					<div class="item-text">Building production web and mobile platforms across agriculture, POS,
+						restaurant management and enterprise automation, covering backend development, frontend/admin
+						interfaces, mobile workflows, APIs, databases, deployment and product support.</div>
 				</div>
-				<div class="mini">
-					<div class="mini-title">Education</div>
-					<div class="mini-text">Degree in Statistics and Computer Science, Technical University of Mombasa.
-						Relevant foundation in computing, databases, statistics and applied data systems.</div>
+				<div>
+					<div class="item-title">Freelance / Contract Software Developer</div>
+					<div class="item-meta">2019 - 2023</div>
+					<div class="item-text">Delivered internal business systems and public-facing platforms, including
+						mobile apps, web portals, dashboards and backend services for clients across multiple sectors.
+					</div>
+				</div>
+				<div>
+					<div class="item-title">Education</div>
+					<div class="item-meta">Technical University of Mombasa</div>
+					<div class="item-text">Bachelor of Science in Statistics and Computer Science. Professional Software
+						Development training started in 2018.</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="card fade">
 			<div class="label">Projects</div>
 			<div class="projects">
-
 				<div class="proj featured">
 					<div class="proj-name">FPOBox</div>
-					<div class="proj-desc">Digital FPO and cooperative management platform for member records, produce
-						collection, field operations, payouts, inventory, accounting, reports, value-chain workflows and
-						mobile applications.</div>
-					<div class="proj-note">Role: Full-stack and mobile development through SoraHub Technology Limited —
-						backend services, dashboards, APIs, database workflows, field/mobile processes, reporting and
-						product support.</div>
-					<div class="tags">
-						<span class="tag">Agriculture</span>
-						<span class="tag">Data Capture</span>
-						<span class="tag">Mobile Apps</span>
-						<span class="tag">Dashboards</span>
-						<span class="tag">REST APIs</span>
-						<span class="tag">Reports</span>
-					</div>
-					<br />
-					<div class="proj-links">
-						<a class="proj-link" href="https://fpobox.co/" target="_blank" rel="noopener"><svg
-								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>Web</a>
-						<a class="proj-link green"
+					<div class="proj-desc">Digital FPO and cooperative management platform for agricultural operations,
+						member/farmer records, produce collection, aggregation workflows, payouts,
+						procurement/subsidy-related workflows, reports, value-chain management and mobile field
+						operations.</div>
+					<div class="tags"><span class="tag">Agriculture</span><span class="tag">Mobile + Web</span><span
+							class="tag">APIs</span><span class="tag">Dashboards</span></div><br />
+					<div class="proj-links"><a class="proj-link" href="https://fpobox.co/" target="_blank"
+							rel="noopener">Web</a><a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.fpobox.mobile" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
-								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>Play</a>
-					</div>
+							rel="noopener">Play</a></div>
 				</div>
-
 				<div class="proj">
 					<div class="proj-name">Cladfy</div>
-					<div class="proj-desc">AI-powered lending platform supporting digital lending workflows, user
-						journeys, application handling and backend-driven financial operations.</div>
+					<div class="proj-desc">AI-powered lending platform with web workflows, backend services and
+						user-facing application processes.</div>
 					<div class="proj-links"><a class="proj-link" href="https://cladfy.app/" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>Web</a></div>
+							rel="noopener">Web</a></div>
 				</div>
-
 				<div class="proj">
 					<div class="proj-name">Onla</div>
-					<div class="proj-desc">Restaurant management SaaS covering digital menus, POS workflows, order
-						management, dashboards and business operations.</div>
+					<div class="proj-desc">Restaurant management and POS platform supporting digital menus, orders,
+						operations and dashboards.</div>
 					<div class="proj-links"><a class="proj-link" href="https://onla.cloud/" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>Web</a></div>
+							rel="noopener">Web</a></div>
 				</div>
-
-				<div class="proj">
-					<div class="proj-name">POSfy</div>
-					<div class="proj-desc">Point-of-sale platform for product management, sales processing, reports,
-						users, shops and mobile/web POS operations.</div>
-					<div class="proj-links"><a class="proj-link" href="https://posfy.cloud/" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>Web</a><a class="proj-link green"
-							href="https://play.google.com/store/apps/details?id=com.posfy.cloud&pcampaignid=web_share"
-							target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
-								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>Play</a></div>
-				</div>
-
 				<div class="proj">
 					<div class="proj-name">PiC Consultants</div>
-					<div class="proj-desc">International consultancy and job board platform for opportunities, candidate
-						access, content management and web presence.</div>
+					<div class="proj-desc">International consultancy and job board platform with public-facing listings
+						and business workflows.</div>
 					<div class="proj-links"><a class="proj-link" href="https://picfirmconsultants.com/" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>Web</a></div>
+							rel="noopener">Web</a></div>
 				</div>
-
+				<div class="proj">
+					<div class="proj-name">POSfy</div>
+					<div class="proj-desc">Complete point-of-sale solution for product management, sales workflows,
+						reports and mobile/web access.</div>
+					<div class="proj-links"><a class="proj-link" href="https://posfy.cloud/" target="_blank"
+							rel="noopener">Web</a><a class="proj-link green"
+							href="https://play.google.com/store/apps/details?id=com.posfy.cloud&pcampaignid=web_share"
+							target="_blank" rel="noopener">Play</a></div>
+				</div>
 				<div class="proj">
 					<div class="proj-name">Tema Feedback</div>
-					<div class="proj-desc">Customer feedback mobile app supporting structured feedback capture, user
-						interaction and mobile service improvement workflows.</div>
+					<div class="proj-desc">Customer feedback mobile app demonstrating user-facing mobile product
+						delivery and deployment.</div>
 					<div class="proj-links"><a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.Tema.Tema" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
-								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>Play Store</a></div>
+							rel="noopener">Play Store</a></div>
 				</div>
-
 				<div class="proj">
 					<div class="proj-name">Hakika Jobs</div>
-					<div class="proj-desc">Job listings mobile app for browsing opportunities, mobile-first access,
-						search workflows and candidate-facing job discovery.</div>
+					<div class="proj-desc">Job listings mobile app with mobile-first access to public job information
+						and listings.</div>
 					<div class="proj-links"><a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.ramosh.Hakika" target="_blank"
-							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
-								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>Play Store</a></div>
+							rel="noopener">Play Store</a></div>
 				</div>
-
 			</div>
 		</div>
-
-		<div class="footer">hassanrapando@gmail.com &nbsp;·&nbsp; Nairobi, Kenya</div>
-
+		<div class="footer">hassanrapando@gmail.com · Nairobi, Kenya · github.com/HassanRamos</div>
 	</main>
 </body>
 
