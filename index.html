@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Hassan Rapando — Mobile & Backend Developer</title>
+	<title>Hassan Rapando — Full-Stack, Mobile & Backend Developer</title>
 	<meta name="description"
-		content="Mobile & Backend Software Developer specializing in Flutter, React Native, Node.js and Laravel. Based in Nairobi, Kenya." />
+		content="Full-stack, mobile and backend software developer specializing in Flutter, React Native, Node.js, Laravel, REST APIs, data systems and scalable digital platforms. Based in Nairobi, Kenya." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -28,8 +28,8 @@
 			--border: rgba(255, 255, 255, 0.07);
 			--border2: rgba(255, 255, 255, 0.12);
 			--text: #e8eaf0;
-			--text2: #8b90a0;
-			--text3: #555b6b;
+			--text2: #9aa1b3;
+			--text3: #636b7e;
 			--accent: #4f8eff;
 			--accent-bg: rgba(79, 142, 255, 0.08);
 			--accent-border: rgba(79, 142, 255, 0.25);
@@ -56,10 +56,9 @@
 
 		.page {
 			width: 100%;
-			max-width: 640px;
+			max-width: 720px;
 		}
 
-		/* Fade-in animation */
 		@keyframes fadeUp {
 			from {
 				opacity: 0;
@@ -92,20 +91,35 @@
 			animation-delay: 0.26s;
 		}
 
-		/* Header */
-		.header {
+		.fade:nth-child(5) {
+			animation-delay: 0.33s;
+		}
+
+		.fade:nth-child(6) {
+			animation-delay: 0.40s;
+		}
+
+		.header,
+		.card {
 			background: var(--bg2);
 			border: 1px solid var(--border);
 			border-radius: var(--radius);
-			padding: 28px 28px 24px;
 			margin-bottom: 12px;
+		}
+
+		.header {
+			padding: 28px 28px 24px;
+		}
+
+		.card {
+			padding: 22px 28px;
 		}
 
 		.avatar-row {
 			display: flex;
 			align-items: center;
 			gap: 18px;
-			margin-bottom: 20px;
+			margin-bottom: 18px;
 		}
 
 		.avatar {
@@ -134,15 +148,21 @@
 		.role {
 			font-size: 13px;
 			color: var(--text2);
+			line-height: 1.5;
 		}
 
-		.pills {
+		.pills,
+		.skills,
+		.proj-links,
+		.tags {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 8px;
 		}
 
-		.pill {
+		.pill,
+		.skill,
+		.tag {
 			display: inline-flex;
 			align-items: center;
 			gap: 6px;
@@ -154,10 +174,16 @@
 			border-radius: 999px;
 			padding: 5px 12px;
 			text-decoration: none;
-			transition: color 0.15s, border-color 0.15s;
 		}
 
-		.pill:hover {
+		.skill,
+		.tag {
+			border-radius: var(--radius-sm);
+			padding: 5px 10px;
+		}
+
+		.pill:hover,
+		.proj-link:hover {
 			color: var(--accent);
 			border-color: var(--accent-border);
 		}
@@ -166,15 +192,6 @@
 			width: 13px;
 			height: 13px;
 			flex-shrink: 0;
-		}
-
-		/* Cards */
-		.card {
-			background: var(--bg2);
-			border: 1px solid var(--border);
-			border-radius: var(--radius);
-			padding: 22px 28px;
-			margin-bottom: 12px;
 		}
 
 		.label {
@@ -187,33 +204,42 @@
 			margin-bottom: 14px;
 		}
 
-		.about {
+		.about,
+		.text {
 			font-size: 14px;
 			line-height: 1.75;
 			color: var(--text2);
 		}
 
-		/* Skills */
-		.skills {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 7px;
+		.split {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+			gap: 10px;
 		}
 
-		.skill {
-			font-size: 12px;
-			font-family: 'DM Mono', monospace;
+		.mini {
 			background: var(--bg3);
-			color: var(--text2);
 			border: 1px solid var(--border);
 			border-radius: var(--radius-sm);
-			padding: 4px 10px;
+			padding: 14px;
 		}
 
-		/* Projects */
+		.mini-title {
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--text);
+			margin-bottom: 6px;
+		}
+
+		.mini-text {
+			font-size: 12px;
+			line-height: 1.65;
+			color: var(--text2);
+		}
+
 		.projects {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 			gap: 8px;
 		}
 
@@ -223,6 +249,12 @@
 			border-radius: var(--radius-sm);
 			padding: 14px 14px 12px;
 			transition: border-color 0.15s;
+		}
+
+		.proj.featured {
+			grid-column: 1 / -1;
+			border-color: var(--accent-border);
+			background: linear-gradient(180deg, rgba(79, 142, 255, 0.06), var(--bg3));
 		}
 
 		.proj:hover {
@@ -237,16 +269,17 @@
 		}
 
 		.proj-desc {
-			font-size: 11px;
-			color: var(--text3);
+			font-size: 12px;
+			color: var(--text2);
 			margin-bottom: 10px;
-			line-height: 1.5;
+			line-height: 1.55;
 		}
 
-		.proj-links {
-			display: flex;
-			gap: 6px;
-			flex-wrap: wrap;
+		.proj-note {
+			font-size: 11px;
+			line-height: 1.55;
+			color: var(--text3);
+			margin-bottom: 10px;
 		}
 
 		.proj-link {
@@ -258,13 +291,9 @@
 			color: var(--accent);
 			border: 1px solid var(--accent-border);
 			border-radius: 999px;
-			padding: 2px 9px;
+			padding: 3px 9px;
 			text-decoration: none;
 			transition: background 0.15s;
-		}
-
-		.proj-link:hover {
-			background: var(--accent-bg);
 		}
 
 		.proj-link svg {
@@ -281,7 +310,6 @@
 			background: var(--green-bg);
 		}
 
-		/* Footer */
 		.footer {
 			text-align: center;
 			font-size: 11px;
@@ -310,13 +338,13 @@
 <body>
 	<main class="page" role="main">
 
-		<!-- Header -->
 		<div class="header fade">
 			<div class="avatar-row">
 				<div class="avatar">HR</div>
 				<div>
 					<div class="name">Hassan Rapando</div>
-					<div class="role">Mobile &amp; Backend Software Developer &nbsp;·&nbsp; Nairobi, Kenya</div>
+					<div class="role">Full-Stack, Mobile &amp; Backend Software Developer &nbsp;·&nbsp; Nairobi, Kenya
+					</div>
 				</div>
 			</div>
 			<div class="pills">
@@ -344,16 +372,41 @@
 			</div>
 		</div>
 
-		<!-- About -->
 		<div class="card fade">
 			<div class="label">About</div>
-			<p class="about">Software Developer specializing in mobile and backend systems. I build scalable
-				cross-platform applications using Flutter and React Native, and robust backend APIs for fintech,
-				healthcare, job platforms, POS systems, and enterprise automation. Degree in Statistics and Computer
-				Science.</p>
+			<p class="about">Software Developer with a degree in Statistics and Computer Science from the Technical
+				University of Mombasa. I build scalable mobile applications, backend APIs, dashboards and data-driven
+				platforms for agriculture, POS, fintech, job platforms, customer feedback, and enterprise automation.
+				Through SoraHub Technology Limited, I have designed and developed production systems covering user
+				management, field data capture, reporting, payments, integrations, and operational workflows.</p>
 		</div>
 
-		<!-- Skills -->
+		<div class="card fade">
+			<div class="label">Core Capability Areas</div>
+			<div class="split">
+				<div class="mini">
+					<div class="mini-title">Mobile &amp; Field Applications</div>
+					<div class="mini-text">Cross-platform mobile apps, Android releases, API integration, user
+						workflows, feedback handling, and field-ready data capture experiences.</div>
+				</div>
+				<div class="mini">
+					<div class="mini-title">Backend APIs &amp; Dashboards</div>
+					<div class="mini-text">RESTful APIs, admin panels, database-driven workflows, authentication,
+						reporting modules, and system integrations.</div>
+				</div>
+				<div class="mini">
+					<div class="mini-title">Digital Operations Systems</div>
+					<div class="mini-text">Platforms for agriculture, POS, lending, recruitment and business automation,
+						built around real user operations and measurable service delivery.</div>
+				</div>
+				<div class="mini">
+					<div class="mini-title">Deployment &amp; Product Delivery</div>
+					<div class="mini-text">Linux/VPS deployment, databases, SSL/domain setup, iterative development,
+						testing, release management, and ongoing support.</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="card fade">
 			<div class="label">Skills</div>
 			<div class="skills">
@@ -361,137 +414,144 @@
 				<span class="skill">React Native</span>
 				<span class="skill">Node.js</span>
 				<span class="skill">Laravel</span>
+				<span class="skill">JavaScript</span>
 				<span class="skill">Firebase</span>
 				<span class="skill">MySQL</span>
 				<span class="skill">MongoDB</span>
 				<span class="skill">REST APIs</span>
+				<span class="skill">Admin Dashboards</span>
+				<span class="skill">Responsive UI</span>
+				<span class="skill">Linux/VPS</span>
+				<span class="skill">Git/GitHub</span>
+				<span class="skill">Agile Delivery</span>
 				<span class="skill">Statistics &amp; CS</span>
 			</div>
 		</div>
 
-		<!-- Projects -->
+		<div class="card fade">
+			<div class="label">Selected Experience</div>
+			<div class="split">
+				<div class="mini">
+					<div class="mini-title">SoraHub Technology Limited</div>
+					<div class="mini-text">Founder / Software Developer. Built and maintained web, mobile and backend
+						systems across agriculture, POS, SaaS operations, jobs, lending and enterprise automation.</div>
+				</div>
+				<div class="mini">
+					<div class="mini-title">Education</div>
+					<div class="mini-text">Degree in Statistics and Computer Science, Technical University of Mombasa.
+						Relevant foundation in computing, databases, statistics and applied data systems.</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="card fade">
 			<div class="label">Projects</div>
 			<div class="projects">
 
-				<div class="proj">
-					<div class="proj-name">FPObox</div>
-					<div class="proj-desc">Field post office management system</div>
+				<div class="proj featured">
+					<div class="proj-name">FPOBox</div>
+					<div class="proj-desc">Digital FPO and cooperative management platform for member records, produce
+						collection, field operations, payouts, inventory, accounting, reports, value-chain workflows and
+						mobile applications.</div>
+					<div class="proj-note">Role: Full-stack and mobile development through SoraHub Technology Limited —
+						backend services, dashboards, APIs, database workflows, field/mobile processes, reporting and
+						product support.</div>
+					<div class="tags">
+						<span class="tag">Agriculture</span>
+						<span class="tag">Data Capture</span>
+						<span class="tag">Mobile Apps</span>
+						<span class="tag">Dashboards</span>
+						<span class="tag">REST APIs</span>
+						<span class="tag">Reports</span>
+					</div>
+					<br />
 					<div class="proj-links">
-						<a class="proj-link" href="https://fpobox.co/" target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<a class="proj-link" href="https://fpobox.co/" target="_blank" rel="noopener"><svg
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="12" cy="12" r="10" />
 								<path
 									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>
-							Web
-						</a>
+							</svg>Web</a>
 						<a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.fpobox.mobile" target="_blank"
-							rel="noopener">
-							<svg viewBox="0 0 24 24" fill="currentColor">
+							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
 								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>
-							Play
-						</a>
+							</svg>Play</a>
 					</div>
 				</div>
 
 				<div class="proj">
 					<div class="proj-name">Cladfy</div>
-					<div class="proj-desc">AI-powered lending platform</div>
-					<div class="proj-links">
-						<a class="proj-link" href="https://cladfy.app/" target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<div class="proj-desc">AI-powered lending platform supporting digital lending workflows, user
+						journeys, application handling and backend-driven financial operations.</div>
+					<div class="proj-links"><a class="proj-link" href="https://cladfy.app/" target="_blank"
+							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="12" cy="12" r="10" />
 								<path
 									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>
-							Web
-						</a>
-					</div>
+							</svg>Web</a></div>
 				</div>
 
 				<div class="proj">
 					<div class="proj-name">Onla</div>
-					<div class="proj-desc">All-in-one restaurant management</div>
-					<div class="proj-links">
-						<a class="proj-link" href="https://onla.cloud/" target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<div class="proj-desc">Restaurant management SaaS covering digital menus, POS workflows, order
+						management, dashboards and business operations.</div>
+					<div class="proj-links"><a class="proj-link" href="https://onla.cloud/" target="_blank"
+							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="12" cy="12" r="10" />
 								<path
 									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>
-							Web
-						</a>
-					</div>
-				</div>
-
-				<div class="proj">
-					<div class="proj-name">PiC Consultants</div>
-					<div class="proj-desc">International consultancy &amp; job board</div>
-					<div class="proj-links">
-						<a class="proj-link" href="https://picfirmconsultants.com/" target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-								<circle cx="12" cy="12" r="10" />
-								<path
-									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>
-							Web
-						</a>
-					</div>
+							</svg>Web</a></div>
 				</div>
 
 				<div class="proj">
 					<div class="proj-name">POSfy</div>
-					<div class="proj-desc">Complete point-of-sale solution</div>
-					<div class="proj-links">
-						<a class="proj-link" href="https://posfy.cloud/" target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<div class="proj-desc">Point-of-sale platform for product management, sales processing, reports,
+						users, shops and mobile/web POS operations.</div>
+					<div class="proj-links"><a class="proj-link" href="https://posfy.cloud/" target="_blank"
+							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
 								<circle cx="12" cy="12" r="10" />
 								<path
 									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-							</svg>
-							Web
-						</a>
-						<a class="proj-link green"
+							</svg>Web</a><a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.posfy.cloud&pcampaignid=web_share"
-							target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="currentColor">
+							target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
 								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>
-							Play
-						</a>
-					</div>
+							</svg>Play</a></div>
+				</div>
+
+				<div class="proj">
+					<div class="proj-name">PiC Consultants</div>
+					<div class="proj-desc">International consultancy and job board platform for opportunities, candidate
+						access, content management and web presence.</div>
+					<div class="proj-links"><a class="proj-link" href="https://picfirmconsultants.com/" target="_blank"
+							rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="10" />
+								<path
+									d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+							</svg>Web</a></div>
 				</div>
 
 				<div class="proj">
 					<div class="proj-name">Tema Feedback</div>
-					<div class="proj-desc">Customer feedback mobile app</div>
-					<div class="proj-links">
-						<a class="proj-link green" href="https://play.google.com/store/apps/details?id=com.Tema.Tema"
-							target="_blank" rel="noopener">
-							<svg viewBox="0 0 24 24" fill="currentColor">
+					<div class="proj-desc">Customer feedback mobile app supporting structured feedback capture, user
+						interaction and mobile service improvement workflows.</div>
+					<div class="proj-links"><a class="proj-link green"
+							href="https://play.google.com/store/apps/details?id=com.Tema.Tema" target="_blank"
+							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
 								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>
-							Play Store
-						</a>
-					</div>
+							</svg>Play Store</a></div>
 				</div>
 
 				<div class="proj">
 					<div class="proj-name">Hakika Jobs</div>
-					<div class="proj-desc">Job listings mobile app</div>
-					<div class="proj-links">
-						<a class="proj-link green"
+					<div class="proj-desc">Job listings mobile app for browsing opportunities, mobile-first access,
+						search workflows and candidate-facing job discovery.</div>
+					<div class="proj-links"><a class="proj-link green"
 							href="https://play.google.com/store/apps/details?id=com.ramosh.Hakika" target="_blank"
-							rel="noopener">
-							<svg viewBox="0 0 24 24" fill="currentColor">
+							rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor">
 								<path d="m3 20.5 10-8.5-10-8.5v17zm7-8.5 7 6-7-2.5V12zm0 0V8.5L17 6l-7 6z" />
-							</svg>
-							Play Store
-						</a>
-					</div>
+							</svg>Play Store</a></div>
 				</div>
 
 			</div>
