@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 	<meta charset="UTF-8" />
@@ -22,36 +22,73 @@
 		}
 
 		:root {
+			--bg: #f5f7fb;
+			--bg-gradient-1: rgba(79, 142, 255, .12);
+			--bg-gradient-2: rgba(62, 207, 142, .08);
+			--bg2: #ffffff;
+			--bg3: #f1f4f9;
+			--bg4: #e9eef7;
+			--border: rgba(16, 24, 40, .09);
+			--border2: rgba(16, 24, 40, .18);
+			--shadow: 0 18px 45px rgba(16, 24, 40, .08);
+			--shadow-sm: 0 10px 26px rgba(16, 24, 40, .06);
+			--text: #172033;
+			--text2: #4a5568;
+			--text3: #6b768a;
+			--muted: #8a94a6;
+			--accent: #2563eb;
+			--accent-strong: #1d4ed8;
+			--accent-bg: rgba(37, 99, 235, .08);
+			--accent-border: rgba(37, 99, 235, .24);
+			--green: #079669;
+			--green-bg: rgba(7, 150, 105, .08);
+			--green-border: rgba(7, 150, 105, .25);
+			--radius: 18px;
+			--radius-sm: 12px;
+		}
+
+		[data-theme="dark"] {
 			--bg: #0d0f12;
+			--bg-gradient-1: rgba(79, 142, 255, .12);
+			--bg-gradient-2: rgba(62, 207, 142, .06);
 			--bg2: #13161b;
 			--bg3: #1a1e25;
+			--bg4: #202633;
 			--border: rgba(255, 255, 255, .07);
-			--border2: rgba(255, 255, 255, .12);
+			--border2: rgba(255, 255, 255, .14);
+			--shadow: 0 18px 45px rgba(0, 0, 0, .18);
+			--shadow-sm: 0 10px 26px rgba(0, 0, 0, .15);
 			--text: #e8eaf0;
 			--text2: #9aa1b2;
 			--text3: #687084;
+			--muted: #555b6b;
 			--accent: #4f8eff;
+			--accent-strong: #76a6ff;
 			--accent-bg: rgba(79, 142, 255, .08);
 			--accent-border: rgba(79, 142, 255, .25);
 			--green: #3ecf8e;
 			--green-bg: rgba(62, 207, 142, .08);
-			--radius: 14px;
-			--radius-sm: 9px
+			--green-border: rgba(62, 207, 142, .25);
 		}
 
 		html {
-			background: var(--bg)
+			background: var(--bg);
+			scroll-behavior: smooth
 		}
 
 		body {
 			font-family: 'DM Sans', sans-serif;
-			background: var(--bg);
+			background:
+				radial-gradient(circle at top left, var(--bg-gradient-1), transparent 30%),
+				radial-gradient(circle at top right, var(--bg-gradient-2), transparent 28%),
+				var(--bg);
 			color: var(--text);
 			min-height: 100vh;
 			display: flex;
 			align-items: flex-start;
 			justify-content: center;
-			padding: 48px 20px 80px
+			padding: 48px 20px 80px;
+			transition: background .2s ease, color .2s ease;
 		}
 
 		.page {
@@ -95,20 +132,51 @@
 			animation-delay: .33s
 		}
 
+		.fade:nth-child(6) {
+			animation-delay: .40s
+		}
+
 		.header,
 		.card {
 			background: var(--bg2);
 			border: 1px solid var(--border);
 			border-radius: var(--radius);
 			padding: 24px 28px;
-			margin-bottom: 12px
+			margin-bottom: 12px;
+			box-shadow: var(--shadow-sm);
+			transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+		}
+
+		.header {
+			position: relative;
+			overflow: hidden
+		}
+
+		.header::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(135deg, var(--accent-bg), transparent 45%);
+			pointer-events: none;
+		}
+
+		.header>* {
+			position: relative
+		}
+
+		.topbar {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 16px;
+			margin-bottom: 20px
 		}
 
 		.avatar-row {
 			display: flex;
 			align-items: center;
 			gap: 18px;
-			margin-bottom: 20px
+			min-width: 0
 		}
 
 		.avatar {
@@ -140,6 +208,32 @@
 			line-height: 1.5
 		}
 
+		.theme-toggle {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			border: 1px solid var(--border);
+			background: var(--bg3);
+			color: var(--text2);
+			border-radius: 999px;
+			padding: 7px 11px;
+			font-family: 'DM Mono', monospace;
+			font-size: 11px;
+			cursor: pointer;
+			transition: background .15s, border-color .15s, color .15s;
+			white-space: nowrap
+		}
+
+		.theme-toggle:hover {
+			border-color: var(--accent-border);
+			color: var(--accent)
+		}
+
+		.theme-icon {
+			font-size: 13px;
+			line-height: 1
+		}
+
 		.pills,
 		.skills,
 		.tags {
@@ -167,13 +261,8 @@
 
 		.pill:hover {
 			color: var(--accent);
-			border-color: var(--accent-border)
-		}
-
-		.pill svg {
-			width: 13px;
-			height: 13px;
-			flex-shrink: 0
+			border-color: var(--accent-border);
+			background: var(--accent-bg)
 		}
 
 		.label {
@@ -181,7 +270,7 @@
 			font-size: 10px;
 			font-weight: 500;
 			letter-spacing: .1em;
-			color: var(--text3);
+			color: var(--muted);
 			text-transform: uppercase;
 			margin-bottom: 14px
 		}
@@ -202,7 +291,8 @@
 			background: var(--bg3);
 			border: 1px solid var(--border);
 			border-radius: var(--radius-sm);
-			padding: 14px
+			padding: 14px;
+			transition: background .2s, border-color .2s
 		}
 
 		.cap-title {
@@ -229,17 +319,18 @@
 			border: 1px solid var(--border);
 			border-radius: var(--radius-sm);
 			padding: 15px 15px 13px;
-			transition: border-color .15s
+			transition: border-color .15s, background .2s, transform .15s
 		}
 
 		.proj:hover {
-			border-color: var(--border2)
+			border-color: var(--border2);
+			transform: translateY(-1px)
 		}
 
 		.featured {
 			grid-column: 1/-1;
 			border-color: var(--accent-border);
-			background: linear-gradient(180deg, rgba(79, 142, 255, .08), var(--bg3))
+			background: linear-gradient(180deg, var(--accent-bg), var(--bg3))
 		}
 
 		.proj-name {
@@ -271,23 +362,19 @@
 			color: var(--accent);
 			border: 1px solid var(--accent-border);
 			border-radius: 999px;
-			padding: 2px 9px;
+			padding: 3px 10px;
 			text-decoration: none;
-			transition: background .15s
+			transition: background .15s, color .15s
 		}
 
 		.proj-link:hover {
-			background: var(--accent-bg)
-		}
-
-		.proj-link svg {
-			width: 11px;
-			height: 11px
+			background: var(--accent-bg);
+			color: var(--accent-strong)
 		}
 
 		.proj-link.green {
 			color: var(--green);
-			border-color: rgba(62, 207, 142, .25)
+			border-color: var(--green-border)
 		}
 
 		.proj-link.green:hover {
@@ -337,6 +424,14 @@
 				padding: 20px 18px
 			}
 
+			.topbar {
+				flex-direction: column
+			}
+
+			.theme-toggle {
+				align-self: flex-start
+			}
+
 			.name {
 				font-size: 20px
 			}
@@ -355,13 +450,20 @@
 <body>
 	<main class="page" role="main">
 		<div class="header fade">
-			<div class="avatar-row">
-				<div class="avatar">HR</div>
-				<div>
-					<div class="name">Hassan Rapando</div>
-					<div class="role">Full-Stack, Mobile &amp; Backend Software Developer · Nairobi, Kenya<br />Digital
-						Operations Systems · REST APIs · Mobile Applications · Admin Dashboards</div>
+			<div class="topbar">
+				<div class="avatar-row">
+					<div class="avatar">HR</div>
+					<div>
+						<div class="name">Hassan Rapando</div>
+						<div class="role">Full-Stack, Mobile &amp; Backend Software Developer · Nairobi,
+							Kenya<br />Digital Operations Systems · REST APIs · Mobile Applications · Admin Dashboards
+						</div>
+					</div>
 				</div>
+				<button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark and light mode">
+					<span class="theme-icon" id="themeIcon">☾</span>
+					<span id="themeText">Dark</span>
+				</button>
 			</div>
 			<div class="pills">
 				<a class="pill" href="mailto:hassanrapando@gmail.com">✉ hassanrapando@gmail.com</a>
@@ -370,6 +472,7 @@
 					rel="noopener">github.com/HassanRamos</a>
 			</div>
 		</div>
+
 		<div class="card fade">
 			<div class="label">About</div>
 			<p class="about">Software Developer with 5+ years of practical experience building mobile applications,
@@ -378,6 +481,7 @@
 				work and SoraHub Technology Limited, I have delivered systems across agriculture, POS, fintech/lending,
 				restaurant management, job platforms, customer feedback and enterprise automation.</p>
 		</div>
+
 		<div class="card fade">
 			<div class="label">Core Capability Areas</div>
 			<div class="grid-2">
@@ -403,6 +507,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="card fade">
 			<div class="label">Skills</div>
 			<div class="skills"><span class="skill">Flutter</span><span class="skill">React Native</span><span
@@ -413,6 +518,7 @@
 					class="skill">Linux/VPS</span><span class="skill">Git/GitHub</span><span class="skill">Agile
 					Delivery</span><span class="skill">Statistics &amp; CS</span></div>
 		</div>
+
 		<div class="card fade">
 			<div class="label">Selected Experience</div>
 			<div class="experience">
@@ -438,6 +544,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="card fade">
 			<div class="label">Projects</div>
 			<div class="projects">
@@ -504,6 +611,29 @@
 		</div>
 		<div class="footer">hassanrapando@gmail.com · Nairobi, Kenya · github.com/HassanRamos</div>
 	</main>
+
+	<script>
+		const root = document.documentElement;
+		const toggle = document.getElementById('themeToggle');
+		const themeText = document.getElementById('themeText');
+		const themeIcon = document.getElementById('themeIcon');
+
+		function applyTheme(theme) {
+			root.setAttribute('data-theme', theme);
+			localStorage.setItem('portfolio-theme', theme);
+			const isDark = theme === 'dark';
+			themeText.textContent = isDark ? 'Light' : 'Dark';
+			themeIcon.textContent = isDark ? '☀' : '☾';
+		}
+
+		const savedTheme = localStorage.getItem('portfolio-theme');
+		applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+
+		toggle.addEventListener('click', () => {
+			const current = root.getAttribute('data-theme');
+			applyTheme(current === 'dark' ? 'light' : 'dark');
+		});
+	</script>
 </body>
 
 </html>
